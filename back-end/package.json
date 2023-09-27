@@ -1,0 +1,17 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "You could find all products your need with website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "market"
+  ],
+  "author": "NathalieBH",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
