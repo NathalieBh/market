@@ -1,24 +1,20 @@
-// our-domain.com/
-import ProductList from "../components/Products/ProductList";
+import { useUser } from "@auth0/nextjs-auth0/client";
+import React from "react";
 
-const DUMMY_PRODUCTS = [
-  {
-    id: "p1",
-    title: "Pasta",
-    price: "3,5€",
-    Image: "https://lenervee.com/images/courriers/pasta-box.png",
-  },
-  {
-    id: "p2",
-    title: "Cheese",
-    price: "3.9€",
-    Image:
-      "https://atlas-content-cdn.pixelsquid.com/stock-images/cheese-box-NxE7AJ8-600.jpg",
-  },
-];
+function index() {
+  const { user, err, isLoading } = useUser();
+  if (isLoading) return <div>Loading ...</div>;
+  if (err) return <div>{err.message}</div>;
 
-function HomePage() {
-  return <ProductList products={DUMMY_PRODUCTS} />;
+  if (user) {
+    return (
+      <div>
+        Welcome {user.name}! <a href="/api/auth/logout">Logout</a>
+      </div>
+    );
+  }
+
+  return <a href="/api/auth/login">Login</a>;
 }
 
-export default HomePage;
+export default index;
