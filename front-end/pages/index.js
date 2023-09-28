@@ -1,5 +1,4 @@
 import { useUser } from "@auth0/nextjs-auth0/client";
-import React from "react";
 
 function index() {
   const { user, err, isLoading } = useUser();

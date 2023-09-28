@@ -1,7 +1,6 @@
-// domain.com/
-// user login
+// market/products/homePage
 
-import ProductList from "../components/Products/ProductList";
+import ProductList from "../../components/Products/ProductList";
 
 const DUMMY_PRODUCTS = [
   {
