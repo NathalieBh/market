@@ -2,11 +2,7 @@ import Card from '../UI/card';
 import classes from './ProductCard.module.css';
 
 function ProductCard(props) {
-  function paymentButtonHandler() {
-    console.log('Product ID:', props.image);
-    console.log('Product ID:', props.name);
-    console.log('Product ID:', props.price);
-  }
+  function paymentButtonHandler() {}
   return (
     <li className={classes.item}>
       <Card>
