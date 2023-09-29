@@ -1,12 +1,12 @@
-import Card from "../UI/card";
-import classes from "./ProductItem.module.css";
-import { useRouter } from "next/router";
+import Card from '../UI/card';
+import classes from './ProductItem.module.css';
+import { useRouter } from 'next/router';
 
 function ProductItem(props) {
   const router = useRouter();
 
-  function orderButtonHandler() {
-    router.push("/" + props.id);
+  function cartButtonHandler() {
+    router.push('/products/cart/cart');
   }
   return (
     <li className={classes.item}>
@@ -15,11 +15,11 @@ function ProductItem(props) {
           <img src={props.image} alt={props.name} />
         </div>
         <div className={classes.content}>
-          <h3>{props.title}</h3>
-          <address>{props.price}</address>
+          <h3>{props.name}</h3>
+          <h4>{props.price}</h4>
         </div>
         <div className={classes.actions}>
-          <button onClick={orderButtonHandler}>Order</button>
+          <button onClick={cartButtonHandler}>Add to cart</button>
         </div>
       </Card>
     </li>

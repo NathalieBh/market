@@ -1,14 +1,16 @@
-import classes from "./MainNavigation.module.css";
-import Link from "next/link";
+import classes from './MainNavigation.module.css';
+import Link from 'next/link';
 function MainNavigation() {
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>Market</div>
+      <div className={classes.logo}>
+        <Link href="/products">Market</Link>
+      </div>
       <nav>
         <ul>
           <li>
             <Link
-              href="/products/homepage/cart/cart
+              href="/products/cart/cart
             "
             >
               Cart

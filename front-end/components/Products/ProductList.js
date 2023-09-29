@@ -1,5 +1,5 @@
-import ProductItem from "./ProductItem";
-import classes from "./ProductList.module.css";
+import ProductItem from './ProductItem';
+import classes from './ProductList.module.css';
 
 function ProductList(props) {
   return (
@@ -9,7 +9,7 @@ function ProductList(props) {
           key={product.id}
           id={product.id}
           image={product.image}
-          title={product.name}
+          name={product.name}
           price={product.price}
         />
       ))}
