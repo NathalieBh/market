@@ -1,8 +1,39 @@
-.login {
-  background-color: #769281;
+.log {
+  background-color: #4a7663;
   width: 90%;
   max-width: 43rem;
-  padding: 1rem;
+  padding: 5rem;
   border-radius: 12px;
   margin: 3rem auto;
+  display: flex;
+  align-items: center;
+}
+
+.loq_detail {
+  text-decoration: none;
+  font-weight: 5;
+  font-size: 1.5rem;
+  text-align: center;
+  background-clip: text;
+  color: aliceblue;
+  display: flex;
+}
+
+.log_box {
+  background-color: #edf3f0;
+  width: 70px;
+  height: 25px;
+  border-radius: 10px;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+}
+.log_box2 {
+  background-color: #edf3f0;
+  width: 120px;
+  height: 25px;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
 }

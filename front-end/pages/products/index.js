@@ -1,8 +1,7 @@
-// market/products/homePage
-import productDetails from "../../components/Products/productDetails";
-import ProductList from "../../components/Products/ProductList";
+import productDetails from '../../components/Products/productDetails';
+import ProductList from '../../components/Products/ProductList';
 
-function HomePage() {
+function HomePage(props) {
   return <ProductList products={productDetails} />;
 }
 
