@@ -9,7 +9,7 @@ function ProductList(props) {
           key={product.id}
           id={product.id}
           image={product.image}
-          title={product.title}
+          title={product.name}
           price={product.price}
         />
       ))}

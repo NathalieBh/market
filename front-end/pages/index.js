@@ -6,6 +6,7 @@ function index() {
   if (err) return <div>{err.message}</div>;
 
   if (user) {
+    console.log(user);
     return (
       <div>
         Welcome {user.name}! <a href="/api/auth/logout">Logout</a>

@@ -1,5 +1,5 @@
 import classes from "./MainNavigation.module.css";
-
+import Link from "next/link";
 function MainNavigation() {
   return (
     <header className={classes.header}>
@@ -7,10 +7,12 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link to="/">ALL Product</Link>
-          </li>
-          <li>
-            <Link to="/">Add Product</Link>
+            <Link
+              href="/products/homepage/cart/cart
+            "
+            >
+              Cart
+            </Link>
           </li>
         </ul>
       </nav>
